@@ -1,0 +1,123 @@
+/*
+*/
+.np-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.np-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #333;
+    opacity: 0.5;
+}
+
+.np-popup {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+    position: absolute;
+    color: #444;
+    min-width: 180px;
+    /*
+    width: 200px;
+    height: 200px;
+    margin: -100px 0 0 -100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    */
+}
+
+.np-btn {
+    text-align: center;
+    font-size: 22px;
+    padding: 10px;
+    cursor: default;
+
+}
+.np-tbl .np-btn {
+    width: 33.33333333%;
+}
+
+.np-unselectable {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */    
+}
+
+.np-hdr {
+    padding: 10px;
+}
+
+.np-ftr {
+    display: flex;
+    justify-content: space-evenly;    
+    padding: 0 0 10px 0;
+}
+
+.np-btn-f {
+    box-sizing: border-box;
+    padding: 7px 10px;
+    cursor: default;
+}
+
+.np-btn:active, .np-btn-f:active, .np-btn.clicked, .np-btn-f.clicked {
+    background-color: #f1f1f1;
+}
+
+.np-cancel-btn, .np-save-btn {
+    font-size: 18px;
+    color: #00a3ca;
+    /*
+    color: #0087ff;
+     */
+}
+.np-del-btn {
+    color: #ff6629;
+}
+
+.np-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.np-tbl {
+    display: table;
+    width: 100%;    
+}
+
+.np-value {
+    font-size: 22px;
+}
+
+.np-value.np-placeholder {
+    color: #bbb;
+}
+
+.np-scale {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all .2s linear;
+    display: block !important;
+}
+
+.np-scale.np-show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.np-fade {
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.np-fade.np-show {
+    opacity: .5;
+}
